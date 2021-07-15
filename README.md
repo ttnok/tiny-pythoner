@@ -1,7 +1,7 @@
 察する Python 入門
 ================
 
-名著 Little Schemer をリスペクト
+名著 The Little Schemer をリスペクト
 
 鋭意作成中
 
