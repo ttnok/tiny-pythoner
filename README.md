@@ -34,7 +34,7 @@ print("hello, " + "world!")
 
 output
 ```txt
-hello
+hello, world!
 ```
 
 ### A013
