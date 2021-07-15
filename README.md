@@ -286,7 +286,7 @@ Hello, Taro-san!
 print("num1: ")
 num1 = input()
 
-print(f"num1 = {num1}")
+print(num1 + 1)
 ```
 
 ```txt
@@ -298,13 +298,13 @@ print(f"num1 = {num1}")
 print("num1: ")
 num1 = int(input())
 
-print(f"num1 = {num1}")
+print(num1 + 1")
 ```
 
 <pre>
 <code>
 num1: <em>5↩️</em>
-num1 = 5
+6
 </code>
 </pre>
 
@@ -313,13 +313,13 @@ num1 = 5
 print("num1: ")
 num1 = float(input())
 
-print(f"num1 = {num1}")
+print(num + 1)
 ```
 
 <pre>
 <code>
 num1: <em>5.3↩️</em>
-num1 = 5.3
+6.3
 </code>
 </pre>
 
