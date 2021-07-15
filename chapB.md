@@ -104,3 +104,104 @@ print("bye!")
 ```txt
 bye!
 ```
+
+### B022
+```py
+if 1 < 2:
+    print("hello!")
+
+print("bye!")
+
+if 1 > 2:
+    print("hello!")
+
+print("bye!")
+```
+```txt
+hello!
+bye!
+bye!
+```
+
+### B023
+```py
+x = float(input("x: "))
+
+if x > 0:
+    print(f"{x} > 0")
+
+print("bye!")
+```
+<pre>
+<code>
+x: <em>5↩️</em>
+5.0 > 0
+bye!
+</code>
+</pre>
+
+<pre>
+<code>
+x: <em>-2↩️</em>
+bye!
+</code>
+</pre>
+
+### B024
+```py
+x = float(input(x: ))
+
+if x > 0:
+    print(f"{x} > 0")
+
+print("bye!")
+
+if x <= 0:
+    print(f"{x} <= 0")
+
+print("bye!")
+```
+<pre>
+<code>
+x: <em>5↩️</em>
+5.0 > 0
+bye!
+bye!
+</code>
+</pre>
+
+<pre>
+<code>
+x: <em>-2↩️</em>
+bye!
+-2 <= 0
+bye!
+</code>
+</pre>
+
+### B025
+```py
+x = float(input(x: ))
+
+if x > 0:
+    print(f"{x} > 0")
+else:
+    print(f"{x} <= 0")
+
+print("bye!")
+```
+<pre>
+<code>
+x: <em>5↩️</em>
+5.0 > 0
+bye!
+</code>
+</pre>
+
+<pre>
+<code>
+x: <em>-2↩️</em>
+-2 <= 0
+bye!
+</code>
+</pre>
