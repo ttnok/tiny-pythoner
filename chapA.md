@@ -165,7 +165,7 @@ float
 
 ### A028
 ```py
-print(type(11 // 3)
+print(type(11 // 3))
 ```
 ```txt
 int
