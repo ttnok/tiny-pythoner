@@ -1,9 +1,6 @@
-察する Python 入門
-================
-
-名著 The Little Schemer をリスペクト
-
-鋭意作成中
+Chapter A
+=========
+（察するPython入門）
 
 A01
 ---
