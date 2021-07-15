@@ -268,8 +268,7 @@ A05
 
 ### A050
 ```py
-print("your name: ")
-your_name = input()
+your_name = input("your name: ")
 
 print(f"Hello, {your_name}-san!")
 ```
@@ -283,8 +282,7 @@ Hello, Taro-san!
 
 ### A051
 ```py
-print("num1: ")
-num1 = input()
+num1 = input("num1: ")
 
 print(num1 + 1)
 ```
@@ -295,10 +293,9 @@ print(num1 + 1)
 
 ### A052
 ```py
-print("num1: ")
-num1 = int(input())
+num1 = int(input("num1: "))
 
-print(num1 + 1")
+print(num1 + 1)
 ```
 
 <pre>
@@ -310,10 +307,9 @@ num1: <em>5↩️</em>
 
 ### A053
 ```py
-print("num1: ")
-num1 = float(input())
+num1 = float(input("num1: "))
 
-print(num + 1)
+print(num1 + 1)
 ```
 
 <pre>
@@ -325,8 +321,7 @@ num1: <em>5.3↩️</em>
 
 ### A054
 ```py
-print("num1: ")
-num1 = input()
+num1 = input("num1: ")
 
 print(type(num1))
 ```
@@ -340,10 +335,8 @@ string
 
 ### A055
 ```py
-print("num1: ")
-num1 = int(input())
-print("num2: ")
-num2 = int(input())
+num1 = int(input("num1: "))
+num2 = int(input("num2: "))
 
 print(f"num1 + num2 = {num1} + {num2} = {num1 + num2}")
 ```
