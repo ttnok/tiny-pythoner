@@ -58,6 +58,35 @@ bye!
 </pre>
 
 ### C012
+Enter 'q' to quit.
+```py
+while True:
+    x = input("x: ")
+
+    if x == "q":
+        break
+
+    x = float(x)
+
+    if x > 0:
+        print(f"{x} > 0")
+    else:
+        print(f"{x} <= 0")
+
+print("bye!")
+```
+<pre>
+<code>
+x: <em>5↩️</em>
+5.0 > 0
+x: <em>-2↩️</em>
+-2.0 <= 0
+x: <em>q↩️</em>
+bye!
+</code>
+</pre>
+
+### C013
 ```py
 for _ in range(3):
     x = float(input("x: "))
