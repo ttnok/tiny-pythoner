@@ -23,13 +23,40 @@ hello
 
 ### A012
 ```py
+print('The sign says, "Hello, World!"')
+```
+```txt
+The sign says, "Hello, World!"
+```
+
+### A013
+```py
+print("The sign says, "Hello, World!"")
+```
+(error)
+```txt
+print("The sign says, "Hello, World!"")
+                       ^
+SyntaxError: invalid syntax
+```
+
+### A014
+```py
+print("The sign says, \"Hello, World!\"")
+```
+```txt
+The sign says, "Hello, World!"
+```
+
+### A015
+```py
 print("hello, " + "world!")
 ```
 ```txt
 hello, world!
 ```
 
-### A013
+### A016
 ```py
 print("1 + 1 = " + "2")
 ```
@@ -37,7 +64,7 @@ print("1 + 1 = " + "2")
 1 + 1 = 2
 ```
 
-### A014
+### A017
 ```py
 print("1 + 1 = " + 2)
 ```
