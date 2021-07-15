@@ -12,7 +12,6 @@ A01
 ```py
 print("hello")
 ```
-output
 ```txt
 hello
 ```
@@ -21,8 +20,6 @@ hello
 ```py
 print('hello')
 ```
-
-output
 ```txt
 hello
 ```
@@ -31,8 +28,6 @@ hello
 ```py
 print("hello, " + "world!")
 ```
-
-output
 ```txt
 hello, world!
 ```
@@ -41,8 +36,6 @@ hello, world!
 ```py
 print("1 + 1 = " + "2")
 ```
-
-ouput
 ```txt
 1 + 1 = 2
 ```
@@ -51,10 +44,13 @@ ouput
 ```py
 print("1 + 1 = " + 2)
 ```
-
-output
-```txt
 (error)
+```txt
+---------------------------------------------------------------------------
+...
+----> 1 print("1 + 1 = " + 2)
+
+TypeError: can only concatenate str (not "int") to str
 ```
 
 A02
@@ -65,7 +61,6 @@ A02
 print(2 + 3)
 ```
 
-output
 ```txt
 5
 ```
@@ -74,8 +69,6 @@ output
 ```py
 print(2 - 3)
 ```
-
-output
 ```txt
 -1
 ```
@@ -84,8 +77,6 @@ output
 ```py
 print(2 * 3)
 ```
-
-output
 ```txt
 6
 ```
@@ -94,8 +85,6 @@ output
 ```py
 print(2 / 3)
 ```
-
-output
 ```txt
 0.6666666666666666
 ```
@@ -104,8 +93,6 @@ output
 ```py
 print(2 // 3)
 ```
-
-output
 ```txt
 0
 ```
@@ -114,9 +101,7 @@ output
 ```py
 print(11 // 3)
 ```
-
-output
-```py
+```txt
 3
 ```
 
@@ -124,9 +109,7 @@ output
 ```py
 print(11 % 3)
 ```
-
-output
-```py
+```txt
 2
 ```
 
@@ -134,9 +117,7 @@ output
 ```py
 print(type(11 / 3))
 ```
-
-output
-```py
+```txt
 float
 ```
 
@@ -144,9 +125,7 @@ float
 ```py
 print(type(11 // 3)
 ```
-
-output
-```py
+```txt
 int
 ```
 
@@ -158,18 +137,19 @@ A03
 ```py
 print("1 + 1 = " + (1 + 1))
 ```
-
-output
-```txt
 (error)
+```txt
+---------------------------------------------------------------------------
+...
+----> 1 print("1 + 1 = " + (1 + 1))
+
+TypeError: can only concatenate str (not "int") to str
 ```
 
 ### A031
 ```py
 print("1 + 1 = " + str(1 + 1))
 ```
-
-output
 ```txt
 1 + 1 = 2
 ```
@@ -178,8 +158,6 @@ output
 ```py
 print(f"1 + 1 = {1 + 1}")
 ```
-
-output
 ```txt
 1 + 1 = 2
 ```
@@ -187,15 +165,12 @@ output
 
 A04
 ---
-
 ### A040
 ```py
 your_name = "Taro"
 
 print("Hello, " + your_name + "-san!")
 ```
-
-output
 ```txt
 Hello, Taro-san!
 ```
@@ -206,8 +181,6 @@ your_name = "Taro"
 
 print(f"Hello, {your_name}-san!")
 ```
-
-output
 ```txt
 Hello, Taro-san!
 ```
@@ -219,55 +192,66 @@ num2 = 3
 
 print(f"{num1} + {num2} = {num1 + num2}")
 ```
-
-output
 ```txt
 2 + 3 = 5
 ```
 
 ### A042
 ```py
-print(f"{num100}")
+print(num100)
 ```
 
-error
+(error)
 ```txt
 ---------------------------------------------------------------------------
 ...
-----> 1 print(f"{num100}")
-      2
+----> 1 print(num100)
 
 NameError: name 'num100' is not defined
 ```
 
 ### A043
 ```py
-x = 2
-y = x + 1
+x = 1
+y = 2 * x + 1
 
-print(f"{y}")
+print(y)
 ```
-
-output
 ```txt
 3
 ```
 
 ### A044
 ```py
-x = 2
-y = x + 1
+t = 2 * s + 1
 
-print(f"{y}")
+s = 1
+print(t)
+```
+(error)
+```txt
+---------------------------------------------------------------------------
+...
+----> 1 t = 2 * s + 1
+      2 
+      3 s = 1
+      4 print(t)
 
-y = 3 * x + 7
+NameError: name 's' is not defined
 ```
 
-output
+### A045
+```py
+x = 1
+y = 2 * x + 1
+
+print(y)
+
+y = 3 * x + 5
+```
 ```txt
 3
 ```
-
 A05
 ---
 
@@ -292,19 +276,21 @@ num1 = input("num1: ")
 print(num1 + 1)
 ```
 
-error
+(error)
 <pre>
 <code>
 num1: <em>5↩️</em>
+</code>
+</pre>
+```txt
 ---------------------------------------------------------------------------
+...
       1 num1 = input("num1: ")
       2
 ----> 3 print(num1 + 1)
 
 TypeError: can only concatenate str (not "int") to str
-</code>
-</pre>
-
+```
 ### A052
 ```py
 num1 = int(input("num1: "))
@@ -358,7 +344,7 @@ print(f"num1 + num2 = {num1} + {num2} = {num1 + num2}")
 <pre>
 <code>
 num1: <em>2↩️</em>
-num1: <em>3↩️</em>
+num2: <em>3↩️</em>
 num1 + num2 = 2 + 3 = 5
 </code>
 </pre>
