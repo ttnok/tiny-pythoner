@@ -227,12 +227,17 @@ output
 
 ### A042
 ```py
-print(f"{num1}")
+print(f"{num100}")
 ```
 
-output
+error
 ```txt
-(error)
+---------------------------------------------------------------------------
+...
+----> 1 print(f"{num100}")
+      2
+
+NameError: name 'num100' is not defined
 ```
 
 ### A043
@@ -287,6 +292,7 @@ num1 = input("num1: ")
 print(num1 + 1)
 ```
 
+error
 <pre>
 <code>
 num1: <em>5↩️</em>
@@ -294,6 +300,7 @@ num1: <em>5↩️</em>
       1 num1 = input("num1: ")
       2
 ----> 3 print(num1 + 1)
+
 TypeError: can only concatenate str (not "int") to str
 </code>
 </pre>
