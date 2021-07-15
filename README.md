@@ -287,9 +287,16 @@ num1 = input("num1: ")
 print(num1 + 1)
 ```
 
-```txt
-(error)
-```
+<pre>
+<code>
+num1: <em>5↩️</em>
+---------------------------------------------------------------------------
+      1 num1 = input("num1: ")
+      2
+----> 3 print(num1 + 1)
+TypeError: can only concatenate str (not "int") to str
+</code>
+</pre>
 
 ### A052
 ```py
