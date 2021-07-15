@@ -186,9 +186,3 @@ output
 
 
 
-output
-```txt
-1 + 1 = 2
-```
-
-
