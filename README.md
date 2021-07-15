@@ -7,4 +7,5 @@
 
 * [Chapter A](./chapA.md)
 * [Chapter B](./chapB.md)
+* [Chapter C](./chapC.md)
   
