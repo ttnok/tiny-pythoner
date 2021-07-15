@@ -37,7 +37,7 @@ print(2 = 1)
 ```
 (error)
 ```txt
-    print(2 = 1)
+    print(2 = 1)  # error
           ^
 SyntaxError: expression cannot contain assignment, perhaps you meant "=="?
 ```

@@ -77,6 +77,15 @@ print("1 + 1 = " + 2)
 TypeError: can only concatenate str (not "int") to str
 ```
 
+### A018
+```py
+# あいさつをするプログラム
+print("hello") # hello と表示
+```
+```txt
+hello
+```
+
 A02
 ---
 
@@ -159,7 +168,7 @@ A03
 
 ### A030
 ```py
-print("1 + 1 = " + (1 + 1))
+print("1 + 1 = " + (1 + 1)) # error
 ```
 (error)
 ```txt
@@ -222,7 +231,7 @@ print(f"{num1} + {num2} = {num1 + num2}")
 
 ### A043
 ```py
-print(num100)
+print(num100) # error
 ```
 
 (error)
@@ -247,7 +256,7 @@ print(y)
 
 ### A045
 ```py
-t = 2 * s + 1
+t = 2 * s + 1  # error
 
 s = 1
 print(t)
@@ -297,7 +306,7 @@ Hello, Taro-san!
 ```py
 num1 = input("num1: ")
 
-print(num1 + 1)
+print(num1 + 1)  # error
 ```
 
 (error)
