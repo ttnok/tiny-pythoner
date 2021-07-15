@@ -54,7 +54,7 @@ print("\" ... double quotaion")
 ```
 ```txt
 ' ... single quotation
-" ... double quotaion
+" ... double quotation
 ```
 
 ### A016

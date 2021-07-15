@@ -285,3 +285,81 @@ print("bye!")
 bye!
 ```
 
+C04
+---
+
+### C040
+```py
+factorial = 1
+n = 4
+
+for i in range(1, n + 1):
+    factorial = factorial * i
+
+print(factorial)
+```
+```txt
+24
+```
+
+### C041
+```py
+factorial = 1
+n = 4
+
+for i in range(1, n + 1):
+    factorial = factorial * i
+    print(f"{i}! = {factorial}")
+
+print("bye!")
+```
+```txt
+1! = 1
+2! = 2
+3! = 6
+4! = 24
+bye!
+```
+
+### C042
+```py
+factorial = 1
+n = 4
+
+for i in range(1, n + 1):
+    print("1", end="")
+    for j in range(1 + 1, i + 1):
+        print(f" * {j}", end="")
+    
+    factorial = factorial * i
+    print(f" = {factorial}")
+
+print("bye!")
+```
+```txt
+1 = 1
+1 * 2 = 2
+1 * 2 * 3 = 6
+1 * 2 * 3 * 4 = 24
+bye!
+```
+
+### C043
+```py
+factorial = 1
+n = 4
+s = "1"
+
+for i in range(1 + 1, n + 1):    
+    factorial = factorial * i
+    s = f"{s} * {i}"
+    print(f"{s} = {factorial}")
+
+print("bye!")
+```
+```txt
+1 * 2 = 2
+1 * 2 * 3 = 6
+1 * 2 * 3 * 4 = 24
+bye!
+```
