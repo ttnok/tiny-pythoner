@@ -185,4 +185,174 @@ output
 ```
 
 
+A04
+---
+
+### A040
+```py
+your_name = "Taro"
+
+print("Hello, " + your_name + "-san!")
+```
+
+output
+```txt
+Hello, Taro-san!
+```
+
+### A041
+```py
+your_name = "Taro"
+
+print(f"Hello, {your_name}-san!")
+```
+
+output
+```txt
+Hello, Taro-san!
+```
+
+### A042
+```py
+num1 = 2
+num2 = 3
+
+print(f"{num1} + {num2} = {num1 + num2}")
+```
+
+output
+```txt
+2 + 3 = 5
+```
+
+### A042
+```py
+print(f"{num1}")
+```
+
+output
+```txt
+(error)
+```
+
+### A043
+```py
+x = 2
+y = x + 1
+
+print(f"{y}")
+```
+
+output
+```txt
+3
+```
+
+### A044
+```py
+x = 2
+y = x + 1
+
+print(f"{y}")
+
+y = 3 * x + 7
+```
+
+output
+```txt
+3
+```
+
+A05
+---
+
+### A050
+```py
+print("your name: ")
+your_name = input()
+
+print(f"Hello, {your_name}-san!")
+```
+
+<pre>
+<code>
+your name: <em>Taro↩️</em>
+Hello, Taro-san!
+</code>
+</pre>
+
+### A051
+```py
+print("num1: ")
+num1 = input()
+
+print(f"num1 = {num1}")
+```
+
+```txt
+(error)
+```
+
+### A052
+```py
+print("num1: ")
+num1 = int(input())
+
+print(f"num1 = {num1}")
+```
+
+<pre>
+<code>
+num1: <em>5↩️</em>
+num1 = 5
+</code>
+</pre>
+
+### A053
+```py
+print("num1: ")
+num1 = float(input())
+
+print(f"num1 = {num1}")
+```
+
+<pre>
+<code>
+num1: <em>5.3↩️</em>
+num1 = 5.3
+</code>
+</pre>
+
+### A054
+```py
+print("num1: ")
+num1 = input()
+
+print(type(num1))
+```
+
+<pre>
+<code>
+num1: <em>5↩️</em>
+string
+</code>
+</pre>
+
+### A055
+```py
+print("num1: ")
+num1 = int(input())
+print("num2: ")
+num2 = int(input())
+
+print(f"num1 + num2 = {num1} + {num2} = {num1 + num2}")
+```
+
+<pre>
+<code>
+num1: <em>2↩️</em>
+num1: <em>3↩️</em>
+num1 + num2 = 2 + 3 = 5
+</code>
+</pre>
 
