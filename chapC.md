@@ -95,6 +95,7 @@ print("bye!")
 0
 1
 2
+bye!
 ```
 
 ### C021
@@ -114,6 +115,7 @@ print("bye!")
 7
 8
 9
+bye!
 ```
 
 ### C022
@@ -197,7 +199,48 @@ bye!
 
 C03
 ---
+
 ### C030
+
+```py
+for i in range(3):
+    print("the outer loop")
+    print(f"i = {i}")
+    for j in range(3):
+        print("    the inner loop")
+        print(f"    j = {j}")
+
+print("bye!")
+```
+```txt
+the outer loop
+i = 0
+    the inner loop
+    j = 0
+    the inner loop
+    j = 1
+    the inner loop
+    j = 2
+the outer loop
+i = 1
+    the inner loop
+    j = 0
+    the inner loop
+    j = 1
+    the inner loop
+    j = 2
+the outer loop
+i = 2
+    the inner loop
+    j = 0
+    the inner loop
+    j = 1
+    the inner loop
+    j = 2
+bye!
+```
+
+### C031
 ```py
 for i in range(1, 3+1):
     for j in range(1, 3+1):
@@ -219,7 +262,7 @@ print("bye!")
 bye!
 ```
 
-### C031
+### C032
 ```py
 for i in range(1, 9+1):
     for j in range(1, 9+1):
