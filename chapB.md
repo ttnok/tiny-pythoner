@@ -149,7 +149,7 @@ bye!
 
 ### B024
 ```py
-x = float(input(x: ))
+x = float(input("x: "))
 
 if x > 0:
     print(f"{x} > 0")
@@ -181,20 +181,17 @@ bye!
 
 ### B025
 ```py
-x = float(input(x: ))
+x = float(input("x: "))
 
 if x > 0:
     print(f"{x} > 0")
 else:
     print(f"{x} <= 0")
-
-print("bye!")
 ```
 <pre>
 <code>
 x: <em>5↩️</em>
 5.0 > 0
-bye!
 </code>
 </pre>
 
@@ -202,6 +199,40 @@ bye!
 <code>
 x: <em>-2↩️</em>
 -2 <= 0
-bye!
+</code>
+</pre>
+
+B03
+---
+
+### B030
+```py
+x = float(input("x: "))
+
+if x > 2.0:
+    print(f"[{x}] > 2.0")
+elif x > 1.0:
+    print(f"1.0 < [{x}] <= 2.0")
+else:
+    print(f"[{x}] <= 1.0")
+```
+<pre>
+<code>
+x: <em>3↩️</em>
+[3.0] > 2.0
+</code>
+</pre>
+
+<pre>
+<code>
+x: <em>1.5↩️</em>
+1.0 < [1.5] <= 2.0
+</code>
+</pre>
+
+<pre>
+<code>
+x: <em>0↩️</em>
+[0.0] <= 1.0
 </code>
 </pre>
