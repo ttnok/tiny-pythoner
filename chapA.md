@@ -28,7 +28,6 @@ print('The sign says, "Hello, World!"')
 ```txt
 The sign says, "Hello, World!"
 ```
-
 ### A013
 ```py
 print("The sign says, "Hello, World!"")
@@ -50,13 +49,23 @@ The sign says, "Hello, World!"
 
 ### A015
 ```py
+print("' ... single quotaion")
+print("\" ... double quotaion")
+```
+```txt
+' ... single quotation
+" ... double quotaion
+```
+
+### A016
+```py
 print("hello, " + "world!")
 ```
 ```txt
 hello, world!
 ```
 
-### A016
+### A017
 ```py
 print("1 + 1 = " + "2")
 ```
@@ -64,7 +73,7 @@ print("1 + 1 = " + "2")
 1 + 1 = 2
 ```
 
-### A017
+### A018
 ```py
 print("1 + 1 = " + 2)
 ```
@@ -77,7 +86,7 @@ print("1 + 1 = " + 2)
 TypeError: can only concatenate str (not "int") to str
 ```
 
-### A018
+### A019
 ```py
 # あいさつをするプログラム
 print("hello") # hello と表示
