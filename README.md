@@ -196,7 +196,7 @@ print(f"{num1} + {num2} = {num1 + num2}")
 2 + 3 = 5
 ```
 
-### A042
+### A043
 ```py
 print(num100)
 ```
@@ -210,7 +210,7 @@ print(num100)
 NameError: name 'num100' is not defined
 ```
 
-### A043
+### A044
 ```py
 x = 1
 y = 2 * x + 1
@@ -221,7 +221,7 @@ print(y)
 3
 ```
 
-### A044
+### A045
 ```py
 t = 2 * s + 1
 
@@ -240,7 +240,7 @@ print(t)
 NameError: name 's' is not defined
 ```
 
-### A045
+### A046
 ```py
 x = 1
 y = 2 * x + 1
