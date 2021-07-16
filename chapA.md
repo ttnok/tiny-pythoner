@@ -106,61 +106,39 @@ A02
 ### A020
 ```py
 print(11 + 3)
+print(11 - 3)
+print(11 * 3)
+print(11 / 3)
 ```
 
 ```txt
 14
+8
+33
+3.6666666666666665
 ```
 
 ### A021
 ```py
-print(11 - 3)
+print(11 // 3)
+print(11 % 3)
 ```
+
 ```txt
-8
+3
+2
 ```
 
 ### A022
 ```py
-print(11 * 3)
-```
-```txt
-33
-```
-
-### A023
-```py
-print(11 / 3)
-```
-```txt
-3.6666666666666665
-```
-
-### A024
-```py
-print(11 // 3)
-```
-```txt
-3
-```
-
-### A025
-```py
-print(11 % 3)
-```
-```txt
-2
-```
-
-### A026
-```py
 print(5 ** 2)
 ```
+
 ```txt
 25
 ```
 
-### A027
+### A023
 ```py
 print(1j * 1j)
 ```
@@ -168,7 +146,7 @@ print(1j * 1j)
 (-1+0j)
 ```
 
-### A028
+### A024
 ```py
 print(j * j)  # error
 ```
@@ -180,7 +158,7 @@ print(j * j)  # error
 NameError: name 'j' is not defined
 ```
 
-### A029
+### A025
 ```py
 print((1 + 1j) ** 2)
 ```
@@ -195,20 +173,14 @@ A03
 ### A030
 ```py
 print(type(3))
-```
-```txt
-<class 'int'>
-```
-
-### A031
-```py
 print(type(3.0))
 ```
 ```txt
+<class 'int'>
 <class 'float'>
 ```
 
-### A032
+### A031
 ```py
 print(type(11 + 3))
 print(type(11 - 3))
@@ -228,7 +200,7 @@ print(type(11 ** 3))
 <class 'int'>
 ```
 
-### A033
+### A032
 ```py
 print(type(11 + 3.0))
 print(type(11 - 3.0))
@@ -248,7 +220,7 @@ print(type(11 ** 3.0))
 <class 'float'>
 ```
 
-### A034
+### A033
 ```py
 print(type(1j))
 ```
