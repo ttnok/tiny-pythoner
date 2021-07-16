@@ -45,10 +45,12 @@ SyntaxError: expression cannot contain assignment, perhaps you meant "=="?
 ### B013
 ```py
 x = 2
-print(1 < x < 3)
+print(0 < x < 3)
+print(0 < x < 1)
 ```
 ```txt
 True
+False
 ```
 
 ### B014
