@@ -234,8 +234,11 @@ C03
 ```py
 for i in range(3):
     print(f"i = {i}")
+
     for j in range(2):
         print("hello")
+    
+    print("-----")
 
 print("bye!")
 ```
@@ -243,12 +246,15 @@ print("bye!")
 i = 0
 hello
 hello
+-----
 i = 1
 hello
 hello
+-----
 i = 2
 hello
 hello
+-----
 bye!
 ```
 
