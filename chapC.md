@@ -233,9 +233,32 @@ C03
 
 ```py
 for i in range(3):
+    print(f"i = {i}")
+    for j in range(2):
+        print("hello")
+
+print("bye!")
+```
+```txt
+i = 0
+hello
+hello
+i = 1
+hello
+hello
+i = 2
+hello
+hello
+bye!
+```
+
+### C031
+
+```py
+for i in range(3):
     print("the outer loop")
     print(f"i = {i}")
-    for j in range(3):
+    for j in range(2):
         print("    the inner loop")
         print(f"    j = {j}")
 
@@ -248,31 +271,25 @@ i = 0
     j = 0
     the inner loop
     j = 1
-    the inner loop
-    j = 2
 the outer loop
 i = 1
     the inner loop
     j = 0
     the inner loop
     j = 1
-    the inner loop
-    j = 2
 the outer loop
 i = 2
     the inner loop
     j = 0
     the inner loop
     j = 1
-    the inner loop
-    j = 2
 bye!
 ```
 
-### C031
+### C032
 ```py
 for i in range(1, 3+1):
-    for j in range(1, 3+1):
+    for j in range(1, 2+1):
         print(f"{i} * {j} = {i * j:2d}")
 
 print("bye!")
@@ -280,17 +297,14 @@ print("bye!")
 ```txt
 1 * 1 =  1
 1 * 2 =  2
-1 * 3 =  3
 2 * 1 =  2
 2 * 2 =  4
-2 * 3 =  6
 3 * 1 =  3
 3 * 2 =  6
-3 * 3 =  9
 bye!
 ```
 
-### C032
+### C033
 ```py
 for i in range(1, 9+1):
     for j in range(1, 9+1):
