@@ -333,7 +333,10 @@ print("bye!")
 bye!
 ```
 
-### C034
+C04
+---
+
+### C040
 ```py
 for i in range(5):
     for j in range(5):
@@ -354,10 +357,86 @@ print("bye!")
 bye!
 ```
 
-C04
+### C041
+```py
+for i in range(5):
+    for j in range(i + 1):
+        print("*", end="")
+    print()
+
+print("bye!")
+```
+```txt
+*
+**
+***
+****
+*****
+bye!
+```
+
+### C042
+```py
+for i in range(5):
+    for j in range(5 - i):
+        print("*", end="")
+    print()
+
+print("bye!")
+```
+```txt
+*****
+****
+***
+**
+*
+bye!
+```
+
+### C043
+```py
+for i in range(5):
+    for j in range(i):
+        print(" ", end="")
+    for j in range(i, 5):
+        print("*", end="")
+    print()
+
+print("bye!")
+```
+```txt
+*****
+ ****
+  ***
+   **
+    *
+bye!
+```
+
+### C044
+```py
+for i in range(5):
+    for j in range(5 - i - 1):
+        print(" ", end="")
+    for j in range(5 - i - 1, 5):
+        print("*", end="")
+    print()
+
+print("bye!")
+```
+```txt
+    *
+   **
+  ***
+ ****
+*****
+bye!
+```
+
+C05
 ---
 
-### C040
+### C050
 ```py
 factorial = 1
 n = 4
@@ -371,7 +450,7 @@ print(factorial)
 24
 ```
 
-### C041
+### C051
 ```py
 factorial = 1
 n = 4
@@ -390,7 +469,7 @@ print("bye!")
 bye!
 ```
 
-### C042
+### C052
 ```py
 factorial = 1
 n = 4
@@ -413,7 +492,7 @@ print("bye!")
 bye!
 ```
 
-### C043
+### C053
 ```py
 factorial = 1
 n = 4
