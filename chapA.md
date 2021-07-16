@@ -51,8 +51,13 @@ The sign says, "Hello, World!"
 ```py
 print("' ... single quotaion")
 print("\" ... double quotaion")
+
+print('\' ... single quotaion')
+print('" ... double quotaion')
 ```
 ```txt
+' ... single quotation
+" ... double quotation
 ' ... single quotation
 " ... double quotation
 ```
@@ -100,46 +105,38 @@ A02
 
 ### A020
 ```py
-print(2 + 3)
+print(11 + 3)
 ```
 
 ```txt
-5
+14
 ```
 
 ### A021
 ```py
-print(2 - 3)
+print(11 - 3)
 ```
 ```txt
--1
+8
 ```
 
 ### A022
 ```py
-print(2 * 3)
+print(11 * 3)
 ```
 ```txt
-6
+33
 ```
 
 ### A023
 ```py
-print(2 / 3)
+print(11 / 3)
 ```
 ```txt
-0.6666666666666666
+3.6666666666666665
 ```
 
 ### A024
-```py
-print(2 // 3)
-```
-```txt
-0
-```
-
-### A025
 ```py
 print(11 // 3)
 ```
@@ -147,7 +144,7 @@ print(11 // 3)
 3
 ```
 
-### A026
+### A025
 ```py
 print(11 % 3)
 ```
@@ -155,20 +152,40 @@ print(11 % 3)
 2
 ```
 
-### A027
+### A026
 ```py
-print(type(11 / 3))
+print(5 ** 2)
 ```
 ```txt
-float
+25
+```
+
+### A027
+```py
+print(1j * 1j)
+```
+```txt
+(-1+0j)
 ```
 
 ### A028
 ```py
-print(type(11 // 3))
+print(j * j)  # error
+```
+(error)
+```txt
+---------------------------------------------------------------------------
+----> 1 print(j * j)
+
+NameError: name 'j' is not defined
+```
+
+### A029
+```py
+print((1 + 1j) ** 2)
 ```
 ```txt
-int
+2j
 ```
 
 
@@ -176,6 +193,81 @@ A03
 ---
 
 ### A030
+```py
+print(type(3))
+```
+```txt
+<class 'int'>
+```
+
+### A031
+```py
+print(type(3.0))
+```
+```txt
+<class 'float'>
+```
+
+### A032
+```py
+print(type(11 + 3))
+print(type(11 - 3))
+print(type(11 * 3))
+print(type(11 / 3))
+print(type(11 // 3))
+print(type(11 % 3))
+print(type(11 ** 3))
+```
+```txt
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+<class 'int'>
+<class 'int'>
+<class 'int'>
+```
+
+### A033
+```py
+print(type(11 + 3.0))
+print(type(11 - 3.0))
+print(type(11 * 3.0))
+print(type(11 / 3.0))
+print(type(11 // 3.0))
+print(type(11 % 3.0))
+print(type(11 ** 3.0))
+```
+```txt
+<class 'float'>
+<class 'float'>
+<class 'float'>
+<class 'float'>
+<class 'float'>
+<class 'float'>
+<class 'float'>
+```
+
+### A034
+```py
+print(type(1j))
+```
+```txt
+<class 'complex'>
+```
+
+### A034
+```py
+print(type("3"))
+```
+```txt
+<class 'str'>
+```
+
+A04
+---
+
+### A040
 ```py
 print("1 + 1 = " + (1 + 1)) # error
 ```
@@ -188,7 +280,7 @@ print("1 + 1 = " + (1 + 1)) # error
 TypeError: can only concatenate str (not "int") to str
 ```
 
-### A031
+### A041
 ```py
 print("1 + 1 = " + str(1 + 1))
 ```
@@ -196,7 +288,7 @@ print("1 + 1 = " + str(1 + 1))
 1 + 1 = 2
 ```
 
-### A032
+### A042
 ```py
 print(f"1 + 1 = {1 + 1}")
 ```
@@ -205,9 +297,9 @@ print(f"1 + 1 = {1 + 1}")
 ```
 
 
-A04
+A05
 ---
-### A040
+### A050
 ```py
 your_name = "Taro"
 
@@ -217,7 +309,7 @@ print("Hello, " + your_name + "-san!")
 Hello, Taro-san!
 ```
 
-### A041
+### A051
 ```py
 your_name = "Taro"
 
@@ -227,7 +319,7 @@ print(f"Hello, {your_name}-san!")
 Hello, Taro-san!
 ```
 
-### A042
+### A052
 ```py
 num1 = 2
 num2 = 3
@@ -238,7 +330,7 @@ print(f"{num1} + {num2} = {num1 + num2}")
 2 + 3 = 5
 ```
 
-### A043
+### A053
 ```py
 print(num100) # error
 ```
@@ -252,7 +344,7 @@ print(num100) # error
 NameError: name 'num100' is not defined
 ```
 
-### A044
+### A054
 ```py
 x = 1
 y = 2 * x + 1
@@ -263,7 +355,7 @@ print(y)
 3
 ```
 
-### A045
+### A055
 ```py
 t = 2 * s + 1  # error
 
@@ -282,7 +374,7 @@ print(t)
 NameError: name 's' is not defined
 ```
 
-### A046
+### A056
 ```py
 x = 1
 y = 2 * x + 1
@@ -295,7 +387,7 @@ y = 3 * x + 5
 3
 ```
 
-### A047
+### A057
 ```py
 x = 1
 x = 2 * x + 1
@@ -306,10 +398,10 @@ print(x)
 3
 ```
 
-A05
+A06
 ---
 
-### A050
+### A060
 ```py
 your_name = input("your name: ")
 
@@ -323,7 +415,7 @@ Hello, Taro-san!
 </code>
 </pre>
 
-### A051
+### A061
 ```py
 num1 = input("num1: ")
 
@@ -345,7 +437,7 @@ num1: <em>5↩️</em>
 
 TypeError: can only concatenate str (not "int") to str
 ```
-### A052
+### A062
 ```py
 num1 = int(input("num1: "))
 
@@ -359,7 +451,7 @@ num1: <em>5↩️</em>
 </code>
 </pre>
 
-### A053
+### A063
 ```py
 num1 = float(input("num1: "))
 
@@ -373,7 +465,7 @@ num1: <em>5.3↩️</em>
 </code>
 </pre>
 
-### A054
+### A064
 ```py
 num1 = input("num1: ")
 
@@ -383,11 +475,11 @@ print(type(num1))
 <pre>
 <code>
 num1: <em>5↩️</em>
-string
+&lt;class 'str'&gt;
 </code>
 </pre>
 
-### A055
+### A065
 ```py
 num1 = int(input("num1: "))
 num2 = int(input("num2: "))
