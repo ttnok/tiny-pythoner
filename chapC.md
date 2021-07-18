@@ -226,6 +226,16 @@ print("bye!")
 bye!
 ```
 
+### C026
+
+```py
+for i in range(5):
+    print(i, end="")
+```
+```txt
+01234
+```
+
 C03
 ---
 
