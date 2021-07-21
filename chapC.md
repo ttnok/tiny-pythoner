@@ -247,6 +247,10 @@ for i in range(1, n + 1):
 
 print(f"1 + ... + {n} = {s}")
 ```
+<pre>
+<code>n = <em>4↩️</em>
+1 + ... + 4 = 10</code>
+</pre>
 
 ### C028
 
@@ -259,8 +263,11 @@ while n != 0:
     n_digits = n_digits + 1
 
 print(n_digits)
-
 ```
+<pre>
+<code>n = <em>123↩️</em>
+123</code>
+</pre>
 
 C03
 ---
