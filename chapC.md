@@ -266,7 +266,7 @@ print(n_digits)
 ```
 <pre>
 <code>n = <em>123↩️</em>
-123</code>
+3</code>
 </pre>
 
 C03
