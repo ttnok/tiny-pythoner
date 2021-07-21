@@ -236,6 +236,32 @@ for i in range(5):
 01234
 ```
 
+### C027
+
+```py
+n = int(input("n = ")) # n >= 2
+
+s = 0
+for i in range(1, n + 1):
+    s = s + i
+
+print(f"1 + ... + {n} = {s}")
+```
+
+### C028
+
+```py
+n = int(input("n = ")) # n > 0
+
+n_digits = 0
+while n != 0:
+    n = n // 10
+    n_digits = n_digits + 1
+
+print(n_digits)
+
+```
+
 C03
 ---
 
